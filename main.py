@@ -1,8 +1,10 @@
 from PIL import Image
 import os
 
+home = "HOMEFOLDERNAMEHERE"
+
 def main():
-    start_path = '/Users/homeName/Desktop/Folder-Of-Books-Separate-Images-In-named-order'
+    start_path = '/Users/' + home + '/Desktop/Folder-Of-Books-Separate-Images-In-named-order'
     image_list = []
     for path,dirs,files in os.walk(start_path):
         # Sort files in alphabetical order
